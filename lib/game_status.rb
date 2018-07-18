@@ -33,7 +33,8 @@ def won?(board)
   return false
 end
 
-won?()
+board = ["X", "X", "X", "O", "O", " ", " ", " ", " "]
+puts won?(board)
 
 def full?(board)
   board.all? do |slot| 
