@@ -32,7 +32,7 @@ def won?(board)
       #false
     end
   end
-  return false
+  #return false
 end
 
 board = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
