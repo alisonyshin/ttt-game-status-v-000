@@ -29,7 +29,8 @@ def won?(board)
     else
       false
     end
-    #[position_1,position_2,position_3].all? {|position| position == "X"}
+    [position_1,position_2,position_3].all? {|position| position == "X"}
+    [position_1,position_2,position_3].all? {|position| position == "O"}
   end
   return false
 end
