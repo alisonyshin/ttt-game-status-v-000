@@ -24,20 +24,18 @@ def won?(board)
     position_1 = board[win_index_1]
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
-    [position_1,position_2,position_3].all? do |position|
-      position == "X" or position == "O"
-      print win_combination
-    #if position_1 == position_2 && position_2 == position_3 && #position_taken?(board,win_index_1) == TRUE
-      #return win_combination
-    #else
-      #false
+    if position_1 == position_2 && position_2 == position_3 && position_taken?(board,win_index_1) == TRUE
+      return win_combination
+    else
+      false
     end
+    #[position_1,position_2,position_3].all? do |position|
+    #position == "X" or position == "O"
   end
-  #return false
+  return false
 end
 
-board = ["O", "O", " ", "X", "X", "X", " ", " ", " "]
-puts won?(board)
+
 
 def full?(board)
   board.all? do |slot| 
