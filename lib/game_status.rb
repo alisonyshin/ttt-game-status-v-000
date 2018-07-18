@@ -26,14 +26,14 @@ def won?(board)
     position_3 = board[win_index_3]
     if position_1 == position_2 == position_3
       return win_combination
-    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-      return win_combination
     else
       false
     end
   end
   return false
 end
+
+won?()
 
 def full?(board)
   board.all? do |slot| 
